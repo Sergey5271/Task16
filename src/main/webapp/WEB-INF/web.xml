@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--============================================================
+	Deployment Descriptor: web.xml
+=============================================================-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected Pages</web-resource-name>
+            <url-pattern>/security/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <resource-env-ref>
+        <resource-env-ref-name>jdbc/bookshop_db</resource-env-ref-name>
+        <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
+    </resource-env-ref>
+
+
+    <listener>
+        <listener-class>context.ContextListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>security.SecurityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>CartFilter</filter-name>
+        <filter-class>filter.CartFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CartFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>LocaleFilter</filter-name>
+        <filter-class>locale.LocaleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LocaleFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>GzipServletFilter</filter-name>
+        <filter-class>locale.GZipServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GzipServletFilter</filter-name>
+        <url-pattern>*.css</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>CacheFilter</filter-name>
+        <filter-class>locale.CacheFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CacheFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+
+    </filter-mapping>
+
+    <context-param>
+        <param-name>localeStrategy</param-name>
+        <param-value>SESSION</param-value>
+    </context-param>
+    <context-param>
+        <param-name>supportedLocales</param-name>
+        <param-value>en ru</param-value>
+    </context-param>
+    <context-param>
+        <param-name>defaultLocale</param-name>
+        <param-value>en</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>captchaStrategy</param-name>
+        <param-value>SESSION</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>avatarPath</param-name>
+        <param-value>C:\Users\Serhii_Makarenko\Desktop\images\</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>booksPath</param-name>
+        <param-value>C:\Users\Serhii_Makarenko\Desktop\imagesBooks\</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>messages</param-value>
+    </context-param>
+
+    <display-name>BookStore</display-name>
+
+    <welcome-file-list>
+        <welcome-file>main</welcome-file>
+    </welcome-file-list>
+
+
+</web-app>

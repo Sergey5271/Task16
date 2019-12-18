@@ -1,0 +1,4 @@
+parser\XMLToRole.class
+servlet\RegistrationServletTest.class
+servlet\LogoutServletTest.class
+servlet\LoginServletTest.class

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<security xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="xsd/security.xsd">
+    <constraint>
+        <url-pattern>/admin/*</url-pattern>
+        <role>ADMIN</role>
+    </constraint>
+    <constraint>
+        <url-pattern>/user/*</url-pattern>
+        <role>USER</role>
+        <role>ADMIN</role>
+    </constraint>
+    <constraint>
+        <url-pattern>/internal/*</url-pattern>
+        <role>USER</role>
+        <role>ADMIN</role>
+    </constraint>
+</security>

@@ -1,0 +1,6 @@
+
+lsquid:S3008"PRename this field "ORDER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ¦þÿúÿÿÿÿ
+ksquid:S2095E"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ù’ÇÄüÿÿÿÿ
+fsquid:S2095."OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ï±š…
+^squid:S20957"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ø÷´à
+Xsquid:S3416":Update this logger to use "RepositoryConcreteOrder.class".(“èö¨8£ç®àÆ-

@@ -1,0 +1,7 @@
+
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¬ûá³üÿÿÿÿ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(âìÊ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ê´ù»
+vsquid:S1192'"ZDefine a constant instead of duplicating this literal "SQL connection is missing" 3 times.(üíùùÿÿÿÿ
+Xsquid:S3416"AUpdate this logger to use "ConcreteSubscriptionRepository.class".(“èö¨
+xsquid:S3008"bRename this field "SUBSCRIPTION_REPOSITORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğšæ

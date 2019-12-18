@@ -1,0 +1,15 @@
+
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ê´ù»
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(âìÊ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Çã
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ßàû™ùÿÿÿÿ
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Äô‡’øÿÿÿÿ
+isquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(•¶ÔS
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(—Á¯õ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(õ¾¡í
+vsquid:S11927"ZDefine a constant instead of duplicating this literal "SQL connection is missing" 6 times.(åÈ­şÿÿÿÿ
+vsquid:S3008"ZRename this field "BOOK_REPOSITORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šŠõøÿÿÿÿ
+Bsquid:S1168x"+Return an empty collection instead of null.(¥¹ï
+Csquid:S1168"+Return an empty collection instead of null.(¥¹ï
+Csquid:S1168¢"+Return an empty collection instead of null.(¥¹ï
+˜squid:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô¼ƒ´

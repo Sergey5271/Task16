@@ -1,0 +1,12 @@
+
+vsquid:S11923"ZDefine a constant instead of duplicating this literal "SQL connection is missing" 3 times.(üíùùÿÿÿÿ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ê´ù»
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ßäß
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(¹®ìÇúÿÿÿÿ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(àá®ğ
+˜squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ôÜ£™
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(òãöÙ
+Wsquid:S3416"9Update this logger to use "ConcreteUserRepository.class".(“èö¨8¢ç®àÆ-
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Õ¤†½ıÿÿÿÿ
+vsquid:S3008"ZRename this field "USER_REPOSITORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ââ¿ùÿÿÿÿ
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(×¤³ëüÿÿÿÿ

@@ -1,0 +1,43 @@
+<%@ taglib tagdir ="/WEB-INF/tags" prefix="t"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page pageEncoding="utf-8" %>
+
+<header>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="main">
+        <fmt:message key="label.home"/>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="main">
+                   <fmt:message key="label.books"/>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shoppingCart.jsp">
+                     <fmt:message key="label.cart"/>
+                    </a>
+                </li>
+                  <t:locale/>
+                </ul>
+            <t:login/>
+            <form action="logout" method="POST" class="form-inline my-2 my-lg-0">
+             <h3 class="text-light bg-dark"> <c:out value="${sessionScope.user.firstName} ${sessionScope.user.secondName} ${sessionScope.user.emailAddress}"/></h3>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                <fmt:message key="label.search"/>
+                </button>
+                <c:if test="${empty sessionScope.user}">
+                    <!-- LOGOUT -->
+                    <form action="logout" method="POST"class="form-inline my-2 my-lg-0" >
+                        <input type="submit" class="btn btn-outline-light my-2 my-sm-0" value="<fmt:message key='label.logout'/>"/>
+                    </form>
+                </c:if>
+            </form>
+        </div>
+</header>
